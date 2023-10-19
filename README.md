@@ -1,12 +1,34 @@
 # ⚡U-Move: Scan to Ride Service⚡
 
-## Index
-1. ### what is Hacktoberfest ?
-2. ### What is Umove?
-3. ### how to contribute.
+## Introduction
+## what is Hacktoberfest ?
+## What is Umove?
+## ❓How to Contribute
 
-4. ### our contributors
+We welcome contributions from everyone. To get started, follow these steps:
 
+### 👉 Getting Started
+
+1. Fork the repository and clone it locally.
+2. Install [dependency/tool] by running `command`.
+3. ...
+
+### 👉 Making Changes
+
+- Explain the structure of your project.
+- Provide guidance on coding standards.
+- ...
+
+### 👉 Creating a Pull Request
+
+1. Make sure your changes are tested and linted.
+2. Create a new branch: `git checkout -b feature/your-feature-name`.
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature/your-feature-name`.
+5. Submit a pull request.
+
+## our contributions
+   
 #### For README file update follow this video
 <p>(https://www.youtube.com/watch?v=a8CwpGARAsQ)</p>
 
