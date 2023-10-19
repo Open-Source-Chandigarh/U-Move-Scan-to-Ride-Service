@@ -1,0 +1,597 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black url('images/loaders.gif') no-repeat center;
+    z-index: 999999;
+}
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* css for navigation bar */
+
+.header {
+    padding: 0 4.8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    cursor: pointer;
+    z-index: 999;
+    margin-bottom: 2rem;
+}
+.sticky{
+    position:fixed;
+    left:0;
+    left: 0;
+    width: 100%;
+
+}
+
+.header .logo {
+    height: 6rem;
+    width: 16rem;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    align-items: center;
+    font-family: 'Bruno Ace';
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: white;
+    transition: all 0.3s;
+    font-weight: 1000;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+    color: red;
+}
+
+.btn {
+    font-size: 2rem;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Bruno Ace';
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.btn:hover {
+    background: rgba(255, 0, 0, 0.737);
+    color: white;
+    transition: .6s;
+}
+
+
+.mobile-navbar-btn {
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mobile-nav-icon {
+    width: 4rem;
+    height: 4rem;
+    color: white;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+}
+
+/* ===========================================
+Hero section
+======================================= */
+.section-hero{
+    padding: 15rem 20rem 0 20rem;
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1) url('images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+.section-hero h1{
+    width: 60rem;
+    font-size: 4.5rem;
+    font-family: 'Open Sans';
+    font-weight: 1000;
+    margin-bottom: 4rem;
+}
+
+.section-hero p{
+    font-size: 2rem;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-bottom: 3rem;
+    width: 50rem;
+}
+.section-hero .button-group .appstore ,.playstore{
+    height:5rem;
+
+
+}
+.section-hero .hero-rightside {
+    width: 40%;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 1;
+}
+.section-hero .hero-leftside {
+    width: 60%;
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+/* section for about */
+.section-about{
+    width: 100%;
+    height: 60rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:9rem 0;
+    padding: 0 20rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-about .left-side img{
+    border-radius: 5rem;
+    margin-top:2.5rem;
+    
+}
+
+.section-about .right-side{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-about .right-side h2{
+    font-family: 'Bruno Ace';
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.section-about .right-side p{
+    font-size: 2rem;
+    font-family: 'Open Sans';
+    font-weight: 550;
+    margin-bottom: 3rem;
+    width: 50rem;
+}
+
+.section-about .right-side .common-button{
+    width: 30rem;
+    font-size: 1.8rem;
+}
+
+/* section for services */
+.Section-Services{
+    background-color: black;
+    width: 100%;
+    height: 70rem;
+    padding: 4rem 20rem;
+}
+.Section-Services h2{
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+    color: white;
+    font-family: 'Bruno Ace';
+}
+.Section-Services .inner-text{
+    width: 40rem;
+    height: 7rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    margin: auto;
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 2rem;
+
+}
+.Section-Services p{
+    margin:5rem;
+    text-align: center;
+    font-family: 'Open Sans';
+    color: black;
+    font-size: 1.25rem;
+    /* padding: 1.5rem; */
+    font-weight: 200;
+
+}
+
+.Section-Services .section-services-task{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:4rem;
+    grid-row-gap: 4rem;
+}
+.Section-Services .section-services-task .task-1,
+.Section-Services .section-services-task .task-2,
+.Section-Services .section-services-task .task-3{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 5rem;
+    margin-bottom: 3px;
+
+
+}
+.Section-Services .section-services-task .task-1 img,
+.Section-Services .section-services-task .task-2 img,
+.Section-Services .section-services-task .task-3 img{
+    height: 40vh;
+    justify-content: center;
+    border-radius: 5rem;
+    width: 100%;
+    
+
+
+}
+.Section-Services .section-services-task .task-1 h3,
+.Section-Services .section-services-task .task-2 h3,
+.Section-Services .section-services-task .task-3 h3{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Open Sans';
+    padding: 0.25rem;
+    font-weight: 900;
+}
+.Section-Services .section-services-task .task-1 p,
+.Section-Services .section-services-task .task-2 p,
+.Section-Services .section-services-task .task-3 p {
+    margin: 1rem 3rem;
+    font-family: 'Open Sans';}
+/* section for contact  */
+.contact {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+    font-family: 'Bruno Ace';
+    font-size: 40px;
+}
+
+.form {
+    max-width: 500px;
+    margin: 25px auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-input {
+    margin: 18px 0px;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btnsub {
+    width: 200px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color: red;
+    border-radius: 50px;
+    border: none;
+    padding: 15px;
+    font-weight: 1000;
+    font-family: 'Bruno Ace';
+    transition: .6s;
+}
+
+.btnsub:hover {
+    font-size: 23px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.529);
+    border-radius: 50px;
+    border: none;
+    padding: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.text-footer {
+    text-align: center;
+    padding-top: 30px 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    color: white;
+    background-color: black;
+
+}
+
+/* ===========================================
+Responsive Codes 
+======================================= */
+
+/* 980px  */
+/* 1em=16px */
+/* 1rem=10px */
+@media (max-width: 62em) {
+    
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 999;
+        color: white;
+    }
+
+    .header {
+        position:fixed;
+    }
+
+    .header .logo {
+        width: 40%;
+    }
+
+    .navbar {
+        /* display: none; */
+        width: 100%;
+        height: 100vh;
+        background: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        /* to get the tranisition  */
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-link:link,
+    .navbar-link:visited {
+        font-size: 2.5rem;
+    }
+
+    .header .logo {
+        height: 6rem;
+        width: 16rem;
+    }
+
+    .active .navbar {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+        display: block;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+        display: none;
+    }
+}
+
+/* Below 560px  */
+@media (max-width: 35em) {
+    .header {
+        padding: 0 2.4rem;
+    }
+
+    .header .logo {
+        width: 60%;
+    }
+}
+
+.header .logo {
+    height: 6rem;
+    width: 16rem;
+}
+/* resposnive for laptop */
+@media (max-width:1280px){
+    .section-hero,
+        .section-about {
+            padding: 2rem 11rem;
+        }
+    html{
+        font-size: 50%;
+    }
+    .section-hero .hero-rightside img {
+        height: 60rem;
+        margin-top: 2rem;
+        visibility: visible;
+    }
+}
+/* Responsive for tablets */
+@media (max-width:980px) {
+
+    .section-hero,
+    .section-about,.Section-Services {
+        padding: 2rem 6rem;
+    }
+    .section-hero .hero-rightside img {
+        height: 50rem;
+        margin: 0;
+        margin-left: -11rem;
+        visibility: visible;
+    }
+    .section-hero .hero-leftside h1 {
+        width: 35rem;
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+    .section-hero .hero-leftside p {
+        width: 35rem;
+        font-size: 1.5rem;
+
+    }
+    .section-about{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .section-about .left-side img{
+        height: 25rem ;
+        justify-content: center;
+    }
+    .section-about .right-side p{
+        width: 35rem;
+    }
+    .section-about .left-side img {
+        height: 25rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-about .left-side iframe {
+        height: 30rem;
+        width: 45rem;
+        margin: 0 5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    /* services section */
+    .Section-Services{
+        height: auto;
+    }
+    .Section-Services h2{
+        width: auto;
+        padding: 0 1rem;
+        padding-top: 5rem;
+        
+
+    }
+    .Section-Services .section-services-task{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 5rem;;
+        padding: 0;
+    }
+    .Section-Services .section-services-task .task-1 ,
+    .Section-Services .section-services-task .task-2 ,
+    .Section-Services .section-services-task .task-3 {
+        margin-left: 0;
+        margin-bottom: 10rem;
+        width: 80vw;
+    
+    }
+    .header .btn{
+        font-size: 3rem;
+
+    }
+
+}
+
+/* making responsive for mobile */
+@media (max-width:770px){
+    /* hero section */
+    .section-hero,.section-about{
+        padding: 2rem 3rem;
+    }
+    .section-hero{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+    }
+    .section-hero .hero-leftside{
+        width: 100%;
+    }
+    .section-hero .hero-rightside{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .section-hero .hero-rightside img{
+        height:37rem;
+        margin:0;
+        margin-top: 0;
+        visibility: visible;
+    }
+    .section-hero .hero-leftside h1{
+        width: 35rem;
+        font-size: 4rem;
+        line-height: 4rem ;
+        margin-top: 10rem;
+    }
+    .section-hero .hero-leftside p {
+        width: 35rem;
+        font-size: 2rem;
+        
+    }
+    .Section-Services .section-services-task .task-1 p,
+    .Section-Services .section-services-task .task-2 p,
+    .Section-Services .section-services-task .task-3 p {
+        padding: 2rem 3rem;
+    font-size: 2rem;}
+    .Section-Services .section-services-task .task-1 h3,
+        .Section-Services .section-services-task .task-2 h3,
+        .Section-Services .section-services-task .task-3 h3 {
+            font-size: 4rem;
+        }
+}
