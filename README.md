@@ -29,8 +29,6 @@ We welcome contributions from everyone. To get started, follow these steps:
 
 ## our contributions
    
-#### For README file update follow this video
-<p>(https://www.youtube.com/watch?v=a8CwpGARAsQ)</p>
 
 <div align="left">
   <img src="https://contrib.rocks/image?repo=priyamaggarwal18/Game_Hub1" alt="Contributions" align="left">
