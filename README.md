@@ -46,7 +46,9 @@ U-Move is revolutionizing campus transportation! This cutting-edge service provi
   - **PR**: Last but not least, open a pull request. We promise to review it as soon as possible!
 
 ## 🙌 Our Amazing Contributors 🙌
-
+<a href="https://github.com/Open-Source-Chandigarh/U-Move-Scan-to-Ride-Service/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Open-Source-Chandigarh/U-Move-Scan-to-Ride-Service" />
+</a>
 <div align="left">
   <img src="https://contrib.rocks/image?repo=priyamaggarwal18/Game_Hub1" alt="Contributions" align="left">
   <h3 align="left">Maintained By - Priyam Aggarwal, Graphics Head Open Source Chandigarh (https://github.com/priyamaggarwal18)</h3>
