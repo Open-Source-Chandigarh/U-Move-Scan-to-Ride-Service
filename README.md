@@ -1,13 +1,12 @@
-<h1 style="text-align: center"> 🛴 U-Move: Your Scan-to-Ride Adventure! 🛴 </h1>
+<h1 style="text-align: center"> ⚡ U-Move: Your Scan-to-Ride Adventure! ⚡ </h1>
 
 <div style="display: flex; justify-content: center"/>
-<img src="https://i.imgur.com/ygckkfJ.jpg" style="border-radius: 25px; box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); max-height: 400px; margin-bottom: 1em"/>
+<img src="https://i.imgur.com/TD0ac2G.png" style="border-radius: 25px; box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); max-height: 400px; margin-bottom: 1em"/>
 </div>
 
 <p style = "text-align: center"> 
 Join the revolution and simplify your journey. Use U-Move to get moving in seconds!
 </p>
-
 
 ## 🌐 Introduction
 - [What is Hacktoberfest?](#🍂-what-is-hacktoberfest)
@@ -15,10 +14,11 @@ Join the revolution and simplify your journey. Use U-Move to get moving in secon
 - [Join the Movement: Contribute!](#💡-how-to-contribute)
 - [Our Amazing Contributors](#🙌-our-amazing-contributors-🙌)
 
-
 ## 🍂 What is Hacktoberfest?
 
-Hacktoberfest, organized by DigitalOcean in partnership with GitHub and other sponsors, is a month-long celebration of open-source software that takes place every October. The event aims to motivate developers, newbies and veterans alike, to contribute to open-source projects. Participants can win swag, like T-shirts and stickers, by making a certain number of pull requests to open-source projects on GitHub during the month. It's a fantastic opportunity not only to give back to the community but also to learn and collaborate with developers from around the world. Want to start your open-source journey? [Learn more and register for Hacktoberfest!](https://hacktoberfest.digitalocean.com/)
+![hacktoberfest-banner](https://uno-website-assets.s3.amazonaws.com/wp-content/uploads/2023/10/02100331/1600_Hacktoberfest-scaled.jpg)
+
+Hacktoberfest, organized by DigitalOcean in partnership with GitHub and other sponsors, is a month-long celebration of open-source software that takes place every October. The event aims to motivate developers, newbies and veterans alike, to contribute to open-source projects. Participants can win swag, like T-shirts and stickers, by making a certain number of pull requests to open-source projects on GitHub during the month. It's a fantastic opportunity not only to give back to the community but also to learn and collaborate with developers from around the world. Want to start your open-source journey?  [Learn more and register for Hacktoberfest!](https://hacktoberfest.digitalocean.com/)
 
 ## 🚀 How U-Move Works
 
