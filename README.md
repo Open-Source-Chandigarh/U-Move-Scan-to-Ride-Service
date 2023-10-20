@@ -12,7 +12,7 @@ We welcome contributions from everyone. To get started, follow these steps:
 1. Fork the repository and clone it locally.
 2. Install [dependency/tool] by running `command`.
 3. ...
-
+   
 ### 👉 Making Changes
 
 - Explain the structure of your project.
