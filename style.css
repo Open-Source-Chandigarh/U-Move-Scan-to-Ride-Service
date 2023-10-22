@@ -75,7 +75,17 @@ body {
 .navbar-link:active {
     color: red;
 }
-
+.navbar-link::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background-color: red;
+    display: block;
+    transition: all 1s;
+}
+.navbar-link:hover::after{
+    width: 100%;
+}
 .btn {
     font-size: 2rem;
     background: red;
@@ -85,6 +95,24 @@ body {
     font-family: 'Bruno Ace';
     border-radius: 0.5rem;
     padding: 1rem;
+    visibility: hidden;
+    animation-name: slide-up;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+@keyframes slide-up {
+    0%{
+        opacity: 0;
+        transform: translateX(100px) scale(0.9);
+        visibility: visible;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+        visibility: visible;
+    }
 }
 .btn:hover {
     background: rgba(255, 0, 0, 0.737);
@@ -142,6 +170,24 @@ Hero section
 }
 .section-hero .button-group .appstore ,.playstore{
     height:5rem;
+    visibility: hidden;
+    animation-name: fade-down2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes fade-down2 {
+    0%{
+        opacity: 0;
+        transform: translateX(-280px) scale(0.9);
+        visibility: visible;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+        visibility: visible;
+    }
 
 
 }
@@ -151,6 +197,19 @@ Hero section
     align-items: flex-end;
     justify-content: center;
     z-index: 1;
+    animation-name: fade-down;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+@keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateX(280px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 .section-hero .hero-leftside {
     width: 60%;
@@ -158,8 +217,26 @@ Hero section
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    animation-name: fadein;
+    animation-duration: 4s;
+    visibility: hidden;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
 }
-
+@keyframes fadein {
+    0%{
+        opacity: 0;
+        visibility: visible;
+    }
+    50%{
+        opacity: 0;
+        visibility: visible;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
 /* section for about */
 .section-about{
     width: 100%;
