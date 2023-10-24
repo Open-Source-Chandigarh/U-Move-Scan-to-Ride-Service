@@ -285,7 +285,7 @@ Hero section
 }
 
 .section-about .right-side .common-button{
-    width: 30rem;
+    width: 12rem;
     font-size: 1.8rem;
 }
 
@@ -813,6 +813,7 @@ ul {
   color: #fff;
   font-size: 22px;
   transform: rotate(-6deg);
+  position: inherit;
 }
 .copyright-area{
   background: #202020;
