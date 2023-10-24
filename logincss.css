@@ -16,9 +16,10 @@
 .hero{
 	height: 100%;
 	width:100%;
-	background-image: linear-gradient(rgba(0,0,0,-4),rgba(0,0,0,-4)),url('loginImg/bg1.jpg');
+	background-image: linear-gradient(rgba(0,0,0,-4),rgba(0,0,0,-4)),url('loginImg/bg2.png');
 	background-position: center;
 	background-size: cover;
+    background-blend-mode: darken;
 	position: absolute;
     display: flex;
     flex-direction: row;
@@ -29,6 +30,7 @@
     height: 500px;
     margin-left: 20px;
     padding: 30px;
+    color: white;
     animation-name: fadein;
     animation-duration: 1.6s;
     visibility: hidden;
@@ -75,8 +77,9 @@
 	background: transparent;
 	padding:5px;
     overflow: hidden;
+    border: 1px solid white ;
     border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 100px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(96, 53, 53, 0.25) 0px 100px 100px -20px, rgba(12, 12, 12, 0.3) 0px 30px 60px -30px, rgba(61, 17, 17, 0.35) 0px -2px 6px 0px inset;
     backdrop-filter: blur(5px);
     animation-name: fadeinex;
     animation-duration: 1s;
@@ -105,7 +108,8 @@
 	position: relative;
 	box-shadow: 0 0 20px 9px #ff61241f;
 	border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: rgb(19, 19, 19);
 }
 
 
@@ -116,10 +120,8 @@
 	border: 0;
 	outline: none;
 	position: relative;
-  font-family: 'Bruno Ace';
-  color:black;
-  
-
+    font-family: 'Bruno Ace';
+    color:rgb(255, 255, 255);
 }
 
 
@@ -170,11 +172,12 @@
     font-family: 'Bruno Ace';
     transition: all 1s;
     font-weight: bold;
+    color: white;
 }
 
 .submit-btn:hover{
-  color: white;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  color: black;
+  box-shadow: rgba(205, 204, 204, 0.3) 0px 19px 38px, rgba(96, 96, 96, 0.22) 0px 15px 12px;
   background: red;
 }
 .check-box{
@@ -186,6 +189,7 @@
 label{
     font-size: 0.9rem;
     cursor: pointer;
+    color: white;
 }
 label:hover{
     color: red;
@@ -232,16 +236,17 @@ footer a {
   padding: 10px 20px;
   border: none;
   text-decoration: none;
-	background: red;
-	border-radius: 30px;
-	transition: .5s;
+  background: red;
+  border-radius: 30px;
+  transition: .5s;
   font-family: 'Bruno Ace';
-  color: black;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  color: white;
+  
 }
 
 .home-button:hover {
-  color: white;
+  color: black;
+  box-shadow: rgba(205, 204, 204, 0.3) 0px 19px 38px, rgba(96, 96, 96, 0.22) 0px 15px 12px;
 }
 
 
