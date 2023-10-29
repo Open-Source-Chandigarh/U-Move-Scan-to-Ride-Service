@@ -17,3 +17,13 @@ function loader_off(){
     loader.style.display='none';
 
 }
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyeqRCyDCUkcQHm78ZHnvDy9vekLsILnhHFcr1JV4wyMaGamAF2TcujryZq8cbh1rgP/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response),form.reset())
+      .catch(error => console.error('Error!', error.message))
+  })
