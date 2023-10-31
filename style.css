@@ -819,6 +819,14 @@ ul {
   background: #202020;
   padding: 25px 0;
 }
+.copyright-area-flex{
+    min-height: 100%;
+    min-width: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .copyright-text p {
   margin: 0;
   font-size: 14px;
