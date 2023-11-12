@@ -1,7 +1,6 @@
 <h1 style="text-align: center"> ⚡ U-Move: Your Scan-to-Ride Adventure! ⚡ </h1>
 
 <div style="display: flex; justify-content: center"/>
-<img src="https://i.imgur.com/TD0ac2G.png" style="border-radius: 25px; box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); max-height: 400px; margin-bottom: 1em"/>
 </div>
 
 <p style = "text-align: center"> 
