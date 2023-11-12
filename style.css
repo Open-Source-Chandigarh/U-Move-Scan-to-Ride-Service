@@ -228,6 +228,10 @@ Hero section
     animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
+.hero-rightside img{
+    width: 600px;
+    height:600px;
+}
 @keyframes fadein {
     0%{
         opacity: 0;
